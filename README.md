@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/chingu-voyage5/Toucans-Team-8.png?columns=all)](https://waffle.io/chingu-voyage5/Toucans-Team-8?utm_source=badge)
 # Toucans-Team-8
 
 The Team
