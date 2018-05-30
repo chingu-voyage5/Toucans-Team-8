@@ -1,9 +1,70 @@
 body {
-  width: 80%;
-  border: 20px solid #bdc3c7;
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 700px;
-  background: #bdc3c7;
+	font-family: 'Rubik', sans-serif;
+	margin: 10px;
+	color: var(--black);
 }
+
+
+/* Start of CSS Grid */
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 150px 150px 150px;
+	grid-template-areas:
+		"item1 item1 item1 item1 item1 item1"
+		"item2 item2 item2 item3 item3 item3"
+		"item4 item4 item5 item5 item6 item6";
+	grid-gap: 20px;
+}
+
+.item {
+	color: var(--white);
+	padding: 1em;
+	border-radius: 3px;
+}
+
+.item1 {
+	grid-area: item1;
+	background-color: var(--purple);
+}
+
+.item2 {
+	grid-area: item2;
+	background-color: var(--red);
+}
+
+.item3 {
+	grid-area: item3;
+	background-color: var(--blue);
+}
+
+.item4 {
+	grid-area: item4;
+	background-color: var(--gray);
+}
+
+.item5 {
+	grid-area: item5;
+	background-color: var(--cyan);
+	color: var(--black);
+}
+
+.item6 {
+	grid-area: item6;
+	background-color: var(--darkblue);
+}
+
+    @media (max-width: 500px) {
+      .container {
+        grid-template-areas: 
+        "item1 item1 item1 item1 item1 item1"
+        "item2 item2 item2 item2 item2 item2"
+        "item3 item3 item3 item3 item3 item3"
+        "item4 item4 item4 item4 item4 item4"
+		"item5 item5 item5 item5 item5 item5"
+		"item6 item6 item6 item6 item6 item6";	
+      }
+    }
+
+/* End of CSS Grid */	
