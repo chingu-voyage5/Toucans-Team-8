@@ -4,10 +4,10 @@
   --blue: #98C1D9;
   --cyan: #E0FBFC;
   --red: #EE6C4D;
-	--darkblue: #293241;
-	--gray: #333333;
-	--black: #191919;
-	--white: #FFFFFF;
+  --darkblue: #293241;
+  --gray: #333333;
+  --black: #191919;
+  --white: #FFFFFF;
 }
 
 
@@ -25,9 +25,9 @@ body {
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 150px 150px 150px;
 	grid-template-areas:
-		"item1 item1 item1 item1 item1 item1"
-		"item2 item2 item2 item3 item3 item3"
-		"item4 item4 item5 item5 item6 item6";
+	"item1 item1 item1 item1 item1 item1"
+	"item2 item2 item2 item3 item3 item3"
+	"item4 item4 item5 item5 item6 item6";
 	grid-gap: 20px;
 }
 
@@ -75,8 +75,8 @@ body {
     "item2 item2 item2 item2 item2 item2"
     "item3 item3 item3 item3 item3 item3"
     "item4 item4 item4 item4 item4 item4"
-		"item5 item5 item5 item5 item5 item5"
-		"item6 item6 item6 item6 item6 item6";	
+    "item5 item5 item5 item5 item5 item5"
+    "item6 item6 item6 item6 item6 item6";	
       }
     }
 
