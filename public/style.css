@@ -4,6 +4,8 @@
   --blue: #98C1D9;
   --cyan: #E0FBFC;
   --red: #EE6C4D;
+  --green: #20b2aa;
+  --medblue: #468499;
   --darkblue: #293241;
   --gray: #333333;
   --black: #191919;
@@ -23,11 +25,12 @@ body {
 .container {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 150px 150px 150px;
 	grid-template-areas:
 	"item1 item1 item1 item1 item1 item1"
-	"item2 item2 item2 item3 item3 item3"
-	"item4 item4 item5 item5 item6 item6";
+	"item2 item2 item2 item2 item2 item2"
+	"item3 item3 item3 item3 item3 item3"
+	"item4 item4 item4 item4 item4 item4"
+	"item5 item5 item5 item5 item5 item5";
 	grid-gap: 20px;
 }
 
@@ -44,7 +47,7 @@ body {
 
 .item2 {
 	grid-area: item2;
-	background-color: var(--red);
+	background-color: var(--medblue);
 }
 
 .item3 {
@@ -63,10 +66,246 @@ body {
 	color: var(--black);
 }
 
-.item6 {
-	grid-area: item6;
+/* Header CSS Grid */
+
+.header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	grid-template-areas:
+	"header1 header4"
+	"header2 header4"
+	"header3 header4";
+	padding: 10px;
+}
+
+.headers {
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.header1 {
+	grid-area: header1;
+	background-color: var(--blue);
+}
+
+.header2 {
+	grid-area: header2;
+	background-color: var(--gray);
+}
+
+.header3 {
+	grid-area: header3;
+	background-color: var(--medblue);
+}
+
+.header4 {
+	grid-area: header4;
+	background-color: var(--green);
+}
+
+/* End Header CSS Grid */
+
+/* What is TickyBot Grid */
+
+.what {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	grid-template-areas:
+	"what1 what1"
+	"what2 what3"
+	"what4 what4";
+}
+
+.whats {
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.what1 {
+	grid-area: what1;
+	background-color: var(--purple);
+}
+
+.what2 {
+	grid-area: what2;
+	background-color: var(--green);
+}
+
+.what3 {
+	grid-area: what3;
+	background-color: var(--gray);
+}
+
+.what4 {
+	grid-area: what4;
 	background-color: var(--darkblue);
 }
+
+/* End of What is TickyBot Grid */
+
+/* Start of How It Works Grid */
+
+.how {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	grid-template-areas:
+	"how1 how1 how1"
+	"how2 how3 how4";
+}
+
+.hows {
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.how1 {
+	grid-area: how1;
+	background-color: var(--darkblue);
+}
+
+.how2 {
+	grid-area: how2;
+	background-color: var(--purple);
+}
+
+.how3 {
+	grid-area: how3;
+	background-color: var(--purple);
+}
+
+.how4 {
+	grid-area: how4;
+	background-color: var(--purple);
+}
+
+/* End of How It Works Grid */
+
+/* Start of How CARD1 grid */
+
+.howcard1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"card1image"
+	"card1text";
+	grid-gap: 10px;
+}
+
+.card1image {
+	grid-area: card1image;
+	background-color: var(--green);
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.card1text {
+	grid-area: card1text;
+	background-color: var(--darkblue);
+	padding: 10px;
+	border-radius: 3px;
+}
+
+/* End of How CARD1 grid */
+
+/* Start of How CARD2 grid */
+
+.howcard2 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"card2image"
+	"card2text";
+	grid-gap: 10px;
+}
+
+.card2image {
+	grid-area: card2image;
+	background-color: var(--green);
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.card2text {
+	grid-area: card2text;
+	background-color: var(--darkblue);
+	padding: 10px;
+	border-radius: 3px;
+}
+
+/* End of How CARD2 grid */
+
+/* Start of How CARD3 grid */
+
+.howcard3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"card3image"
+	"card3text";
+	grid-gap: 10px;
+}
+
+.card3image {
+	grid-area: card3image;
+	background-color: var(--green);
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.card3text {
+	grid-area: card3text;
+	background-color: var(--darkblue);
+	padding: 10px;
+	border-radius: 3px;
+}
+
+/* End of How CARD3 grid */
+
+/* Start of Start Using TickyBot Today Grid */
+
+.start {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+	grid-template-areas:
+	"start1"
+	"start2"
+	"start3"
+	"start4";
+}
+
+.starts {
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.start1 {
+	grid-area: start1;
+	background-color: var(--medblue);
+}
+
+.start2 {
+	grid-area: start2;
+	background-color: var(--darkblue);
+}
+
+.start3 {
+	grid-area: start3;
+	background-color: var(--purple);
+}
+
+.start4 {
+	grid-area: start4;
+	background-color: var(--green);
+}
+
+/* Start of Start Using TickyBot Today Grid */
+
+
+/* MEDIA QUERIES HERE
 
 @media (max-width: 500px) {
   .container {
@@ -75,9 +314,10 @@ body {
     "item2 item2 item2 item2 item2 item2"
     "item3 item3 item3 item3 item3 item3"
     "item4 item4 item4 item4 item4 item4"
-    "item5 item5 item5 item5 item5 item5"
-    "item6 item6 item6 item6 item6 item6";	
+    "item5 item5 item5 item5 item5 item5";	
       }
     }
+
+
 
 /* End of CSS Grid */	
