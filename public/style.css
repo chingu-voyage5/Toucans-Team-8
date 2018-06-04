@@ -1,4 +1,3 @@
-
 :root {
   --purple: #3D5A80;
   --blue: #98C1D9;
@@ -18,7 +17,35 @@ body {
 	margin: 10px;
 	color: var(--black);
 }
+/* Nav Bar Start*/
+.navBar {
+  background: #40596b;
+  padding: 8px;
+  text-align: center;
+}
 
+.navBar ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  display: inline-block;
+}
+
+.navBar li {
+  float:left;
+  padding: 14px 16px;
+}
+.navBar a {
+  display:block;
+  color: #ffd05a;
+  text-decoration:none;
+}
+
+:hover .navBar a{
+  color: white;
+}
+/* Add hover to each a as an ID */
+/* Nav Bar End*/
 
 /* Start of CSS Grid */
 
@@ -306,7 +333,6 @@ body {
 
 
 /* MEDIA QUERIES HERE
-
 @media (max-width: 500px) {
   .container {
     grid-template-areas: 
@@ -317,7 +343,4 @@ body {
     "item5 item5 item5 item5 item5 item5";	
       }
     }
-
-
-
 /* End of CSS Grid */	
