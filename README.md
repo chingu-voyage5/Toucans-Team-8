@@ -8,4 +8,4 @@ The Team
 
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/chingu-voyage5/Toucans-Team-8.png?columns=all)](https://waffle.io/chingu-voyage5/Toucans-Team-8?utm_source=badge)
 
-Add-project-description-here | Voyage-5 | chingu.io
+TickyBot Landing Page Clone without Animations(For Now) | Voyage-5 | chingu.io
