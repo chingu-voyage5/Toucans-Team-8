@@ -19,9 +19,13 @@ body {
 }
 /* Nav Bar Start*/
 .navBar {
-  background: #40596b;
-  padding: 8px;
+  background: #40596b; 
   text-align: center;
+  height: 54px;
+  font-size: 1.25em;
+  padding-top:8px;
+  font-family: 'Signika', sans-serif;
+  font-weight:300;
 }
 
 .navBar ul {
@@ -33,7 +37,7 @@ body {
 
 .navBar li {
   float:left;
-  padding: 14px 16px;
+  padding: 10px 12px;
 }
 .navBar a {
   display:block;
@@ -41,10 +45,14 @@ body {
   text-decoration:none;
 }
 
-:hover .navBar a{
-  color: white;
-}
-/* Add hover to each a as an ID */
+#home:hover a{
+  color: white;} 
+#about:hover a{
+  color: white;} 
+#features:hover a{
+  color: white;} 
+#addto:hover a{
+  color: white;}
 /* Nav Bar End*/
 
 /* Start of CSS Grid */
@@ -64,7 +72,7 @@ body {
 .item {
 	color: var(--white);
 	padding: 1em;
-	border-radius: 3px;
+/* 	border-radius: 3px; */
 }
 
 .item1 {
@@ -98,12 +106,14 @@ body {
 .header {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
+	grid-gap: 10%;
 	grid-template-areas:
 	"header1 header4"
 	"header2 header4"
 	"header3 header4";
 	padding: 10px;
+  background-color:#55c0ec;
+  height:685px;
 }
 
 .headers {
@@ -113,12 +123,33 @@ body {
 
 .header1 {
 	grid-area: header1;
-	background-color: var(--blue);
+  font-family:Signika;
+/*   font-size: 4.5em; */
+  padding-top:15%;
+  padding-bottom:0%;
+  text-align:center;
+  color:white;
 }
-
+.header2 h1{
+  font-size:2.75em;
+  color:rgba(0,0,0,.6);
+  margin-top:0%;
+  margin-bottom:0%;
+  letter-spacing:-3px;
+  font-weight:300;
+}
+.header2 strong{
+  font-weight:600;
+}
+.header2 p{margin-top:2%;
+  color:white;
+  letter-spacing:-1px;
+}
 .header2 {
 	grid-area: header2;
-	background-color: var(--gray);
+  font-family:Signika;
+  font-size:1.74em;
+  text-align:center;
 }
 
 .header3 {
