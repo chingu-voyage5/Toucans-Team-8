@@ -149,11 +149,11 @@ body {
 
 .how {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 20px;
 	grid-template-areas:
-	"how1 how1 how1"
-	"how2 how3 how4";
+	"how1 how1 how1 how1 how1 how1"
+	"how2 how2 how3 how3 how4 how4";
 }
 
 .hows {
@@ -305,19 +305,56 @@ body {
 /* Start of Start Using TickyBot Today Grid */
 
 
-/* MEDIA QUERIES HERE
+/* MEDIA QUERIES HERE */
 
-@media (max-width: 500px) {
-  .container {
-    grid-template-areas: 
-    "item1 item1 item1 item1 item1 item1"
-    "item2 item2 item2 item2 item2 item2"
-    "item3 item3 item3 item3 item3 item3"
-    "item4 item4 item4 item4 item4 item4"
-    "item5 item5 item5 item5 item5 item5";	
+@media (max-width: 1050px) {
+  .how {
+	grid-template-areas: 
+    "how1 how1 how1 how1 how1 how1"
+    "how2 how2 how2 how3 how3 how3"
+    "how4 how4 how4 how4 how4 how4";
       }
-    }
+	}
 
+@media (max-width: 725px) {
+	.how {
+		grid-template-areas: 
+		"how1 how1 how1 how1 how1 how1"
+		"how2 how2 how2 how2 how2 how2"
+		"how3 how3 how3 how3 how3 how3"
+		"how4 how4 how4 how4 how4 how4";
+		}
+	}
+	
+@media (max-width: 725px) {
+	.how {
+		grid-template-areas: 
+		"how1 how1 how1 how1 how1 how1"
+		"how2 how2 how2 how2 how2 how2"
+		"how3 how3 how3 how3 how3 how3"
+		"how4 how4 how4 how4 how4 how4";
+		}
+	}	
 
+@media (max-width: 725px) {
+	.what {
+		grid-template-areas: 
+		"what1 what1"
+		"what2 what2"
+		"what3 what3"
+		"what4 what4";
+		}
+	}
 
+@media (max-width: 725px) {
+	.header {
+		grid-template-areas: 
+		"header1 header1"
+		"header2 header2"
+		"header3 header3"
+		"header4 header4";
+		}
+	}	
+
+	
 /* End of CSS Grid */	
