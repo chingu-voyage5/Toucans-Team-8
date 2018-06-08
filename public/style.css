@@ -10,6 +10,7 @@
   --gray: #333333;
   --black: #191919;
   --white: #FFFFFF;
+  --footer: #41596A;
 }
 
 
@@ -302,7 +303,43 @@ body {
 	background-color: var(--green);
 }
 
-/* Start of Start Using TickyBot Today Grid */
+/* End of Start Using TickyBot Today Grid */
+
+
+/* Start of Footer Grid */
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 5px;
+	background-color: var(--footer);
+	grid-template-areas:
+	"footer1"
+	"footer2"
+	"footer3";
+}
+
+.footers {
+	padding: 0px;
+	border-radius: 3px;
+	text-align: center;
+	color: var(--white);
+	font-size: .75em;
+}
+
+.footer1 {
+	grid-area: footer1;
+}
+
+.footer2 {
+	grid-area: footer2;
+}
+
+.footer3 {
+	grid-area: footer3;
+}
+
+/* End of Footer Grid */
 
 
 /* MEDIA QUERIES HERE */
@@ -358,4 +395,26 @@ body {
 
 /* End of MEDIA QUERIES */
 
-/* End of CSS Grid */	
+/* End of CSS Grid */
+
+/* Start of link styling */
+
+a {
+	text-decoration: none;
+	color: var(--green);
+}
+  
+  a:hover {
+	color: var(--red);
+  }
+  
+  a:active {
+	color: var(--darkblue);
+  }
+  
+  a:visited {
+	color: var(--cyan);
+  }
+
+/* Start of link styling */
+
