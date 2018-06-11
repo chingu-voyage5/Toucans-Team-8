@@ -20,6 +20,48 @@ body {
 	color: var(--black);
 }
 
+/* Nav Bar Start*/
+.navBar {
+	background: #40596b;
+	text-align: center;
+	height: 54px;
+	font-size: 1.25em;
+	padding-top: 8px;
+	font-family: "Signika", sans-serif;
+	font-weight: 300;
+  }
+  
+  .navBar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+  }
+  
+  .navBar li {
+	float: left;
+	padding: 10px 12px;
+  }
+  .navBar a {
+	display: block;
+	color: #ffd05a;
+	text-decoration: none;
+  }
+  
+  #home:hover a {
+	color: white;
+  }
+  #about:hover a {
+	color: white;
+  }
+  #features:hover a {
+	color: white;
+  }
+  #addto:hover a {
+	color: white;
+  }
+  /* Nav Bar End*/
+
 
 /* Start of CSS Grid */
 
@@ -420,24 +462,4 @@ body {
 
 /* End of CSS Grid */
 
-/* Start of link styling */
-
-a {
-	text-decoration: none;
-	color: var(--green);
-}
-  
-  a:hover {
-	color: var(--red);
-  }
-  
-  a:active {
-	color: var(--darkblue);
-  }
-  
-  a:visited {
-	color: var(--cyan);
-  }
-
-/* Start of link styling */
 
