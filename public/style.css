@@ -58,7 +58,7 @@ body {
 
 .item4 {
 	grid-area: item4;
-	background-color: var(--gray);
+	background-color: var(--white);
 }
 
 .item5 {
@@ -281,26 +281,49 @@ body {
 .starts {
 	padding: 10px;
 	border-radius: 3px;
+	color: var(--black);
 }
 
 .start1 {
 	grid-area: start1;
-	background-color: var(--medblue);
+	font-size: 2em;
+	text-align: center;
 }
 
 .start2 {
 	grid-area: start2;
-	background-color: var(--darkblue);
+	background-color: var(--white);
+	font-size: 1em;
+	text-align: center;
+	padding: 0 1rem 1rem;
 }
 
 .start3 {
 	grid-area: start3;
-	background-color: var(--purple);
+	background-color: var(--white);
+	justify-self: center;
 }
+
+
+
+.btn {
+	background-color: var(--footer);
+	border: 0;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	padding: 1em 3em;
+	font-size: 1rem;
+	font-family: inherit;
+  }
+
 
 .start4 {
 	grid-area: start4;
-	background-color: var(--green);
+	background-color: var(--white);
+	font-size: 1em;
+	text-align: center;
+	margin: 0% 25%;
 }
 
 /* End of Start Using TickyBot Today Grid */
