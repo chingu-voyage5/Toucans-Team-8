@@ -177,6 +177,15 @@ body {
   padding:20px;
   border-radius:4px;
   min-width:300px;
+  
+}
+#slackbutton img{
+  height:55px;
+  float:left;
+  display:block;
+  padding-left:20px;
+  padding-right:0px;
+
 }
 
 .header3 {
@@ -277,35 +286,50 @@ body {
 .how {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+/*   grid-gap: 20px; */
   grid-template-areas:
     "how1 how1 how1"
     "how2 how3 how4";
+  background:#90ddaa;
 }
 
 .hows {
-  padding: 10px;
   border-radius: 3px;
+  font-family: Signika;
+  color: rgba(0,0,0,0.7);
+  text-align:center;
+  
 }
 
 .how1 {
   grid-area: how1;
-  background-color: var(--darkblue);
+  padding-top:20px;
+  font-size:2.75em;
+    
 }
 
 .how2 {
   grid-area: how2;
-  background-color: var(--purple);
+  width:50%;
+  margin-left:30%;
+  margin-right:5%;
+  min-width:325px;
 }
 
 .how3 {
-  grid-area: how3;
-  background-color: var(--purple);
+    grid-area: how3;
+  width:50%;
+  margin-left:30%;
+  margin-right:5%;
+  min-width:325px;
 }
 
 .how4 {
   grid-area: how4;
-  background-color: var(--purple);
+  width:50%;
+  margin-left:30%;
+  margin-right:5%;
+  min-width:325px;
 }
 
 /* End of How It Works Grid */
@@ -318,21 +342,37 @@ body {
   grid-template-areas:
     "card1image"
     "card1text";
-  grid-gap: 10px;
+/*   grid-gap: 10px; */
+  background-color: #40596b;
 }
 
+.cardImages{
+  height:225px;
+  margin:auto;
+  float:left;
+  margin-top:15%;
+  margin-left:15%;
+  margin-bottom:10%;
+  
+}
 .card1image {
   grid-area: card1image;
-  background-color: var(--green);
+  background-color: #40596b;
   padding: 10px;
   border-radius: 3px;
-}
+ }
 
 .card1text {
   grid-area: card1text;
-  background-color: var(--darkblue);
-  padding: 10px;
+  background-color: white;
+  padding: 0px;
   border-radius: 3px;
+  font-size:1.25em;
+  padding-top:15px;
+  padding-bottom:20px;
+  padding-left:5px;
+  padding-right:5px;
+  border-radius: 0px 0px 3px 3px;
 }
 
 /* End of How CARD1 grid */
@@ -345,21 +385,27 @@ body {
   grid-template-areas:
     "card2image"
     "card2text";
-  grid-gap: 10px;
+/*   grid-gap: 10px; */
+  background-color: #40596b;
 }
 
 .card2image {
   grid-area: card2image;
-  background-color: var(--green);
   padding: 10px;
   border-radius: 3px;
 }
 
 .card2text {
   grid-area: card2text;
-  background-color: var(--darkblue);
-  padding: 10px;
+ background-color: white;
+  padding: 0px;
   border-radius: 3px;
+  font-size:1.25em;
+  padding-top:15px;
+  padding-bottom:20px;
+  padding-left:5px;
+  padding-right:5px;
+  border-radius: 0px 0px 3px 3px;
 }
 
 /* End of How CARD2 grid */
@@ -372,21 +418,27 @@ body {
   grid-template-areas:
     "card3image"
     "card3text";
-  grid-gap: 10px;
+  /*   grid-gap: 10px; */
+  background-color: #40596b;
 }
 
 .card3image {
   grid-area: card3image;
-  background-color: var(--green);
   padding: 10px;
   border-radius: 3px;
 }
 
 .card3text {
   grid-area: card3text;
-  background-color: var(--darkblue);
-  padding: 10px;
+ background-color: white;
+  padding: 0px;
   border-radius: 3px;
+  font-size:1.25em;
+  padding-top:15px;
+  padding-bottom:20px;
+  padding-left:5px;
+  padding-right:5px;
+  border-radius: 0px 0px 3px 3px;
 }
 
 /* End of How CARD3 grid */
