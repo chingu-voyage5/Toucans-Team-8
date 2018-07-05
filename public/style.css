@@ -120,26 +120,46 @@ body {
 	"header2 header4"
 	"header3 header4";
 	padding: 10px;
+	background-color: #55c0ec;
+	max-height: 685px;
+	min-height: 380px;
 }
 
 .headers {
 	padding: 10px;
 	border-radius: 3px;
+	text-align: center;
 }
 
-.header1 {
+.header1 h1 {
 	grid-area: header1;
-	background-color: var(--blue);
+	font-size: 2.75em;
+	color: rgba(0, 0, 0, 0.6);
+	margin-top: 0%;
+	margin-bottom: 0%;
+	letter-spacing: -3px;
+	font-weight: 300;
+	padding-top: 15%;
+	padding-bottom: 0%;
 }
+
 
 .header2 {
 	grid-area: header2;
-	background-color: var(--gray);
+	color: var(--white);
+	letter-spacing: -1px;
+	max-width: 500px;
+	margin: auto;
+	font-family: Signika;
+	font-size: 1.74em;
+	text-align: center;
+	padding-top: 0%;
 }
 
 .header3 {
 	grid-area: header3;
 	background-color: var(--medblue);
+	margin-bottom: 30%;
 }
 
 .header4 {
@@ -151,40 +171,72 @@ body {
 
 /* What is TickyBot Grid */
 
-.what {
+/* Blue Line Under titles  */
+.breakit {
+	margin-top: 0;
+	align:center;
+	width:200px;
+	border: 2px solid #55c0ec;
+	border-color:#55c0ec;
+  }
+  /* End Blue Line */
+  
+  .what {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 20px;
 	grid-template-areas:
-	"what1 what1"
-	"what2 what3"
-	"what4 what4";
-}
-
-.whats {
+	  "what1 what1"
+	  "what2 what3"
+	  "what4 what4";
+	font-family: Signika;
+	color:rgba(0, 0, 0, 0.75);
+	line-height:1.5;
+	background-color: var(--white);
+  }
+  
+  .whats {
 	padding: 10px;
 	border-radius: 3px;
-}
-
-.what1 {
+  }
+  
+  .what1 {
 	grid-area: what1;
-	background-color: var(--purple);
-}
-
-.what2 {
+	background-color: var(--white);
+	text-align:center;
+	font-size:3em;
+  }
+  
+  .what2 {
 	grid-area: what2;
-	background-color: var(--green);
-}
-
-.what3 {
+	background-color: var(--white);
+	text-align:left;
+	font-size:1.5em;
+	margin-left:10%;
+	margin-right:0%;
+  }
+  
+  .what3 {
 	grid-area: what3;
-	background-color: var(--gray);
-}
-
-.what4 {
+	background-color: var(--white);
+	text-align:left;
+	font-size:1.5em;
+	margin-left:0%;
+	margin-right:15%;
+  }
+  
+  .what4 {
 	grid-area: what4;
-	background-color: var(--darkblue);
-}
+	background-color: var(--white);
+	text-align:left;
+	font-size:1.5em;
+	margin-left:5%;
+	margin-right:7.25%;
+  }
+  
+  .what4 p{
+	margin:0px;
+  }
 
 /* End of What is TickyBot Grid */
 
