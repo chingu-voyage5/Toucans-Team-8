@@ -16,7 +16,7 @@
 
 body {
 	font-family: 'Rubik', sans-serif;
-	margin: 10px;
+	margin: 0px;
 	color: var(--black);
 }
 
@@ -245,25 +245,33 @@ body {
 .how {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-gap: 20px;
+	grid-gap: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 100px;
 	grid-template-areas:
 	"how1 how1 how1 how1 how1 how1"
 	"how2 how2 how3 how3 how4 how4";
+	background:#90ddaa;
 }
 
 .hows {
-	padding: 10px;
+	/*padding: 10px;*/
 	border-radius: 3px;
+	font-family: Signika;
+	color: rgba(0,0,0,0.7);
+	text-align:center;
 }
 
 .how1 {
 	grid-area: how1;
-	background-color: var(--darkblue);
+  	padding-top:20px;
+  	font-size:2.75em;
 }
 
 .how2 {
 	grid-area: how2;
-	background-color: var(--purple);
+	min-width:325px;
 }
 
 .how3 {
@@ -284,23 +292,41 @@ body {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-areas:
-	"card1image"
-	"card1text";
-	grid-gap: 10px;
+	  "card1image"
+	  "card1text";
+  /*   grid-gap: 10px; */
+	background-color: #40596b;
 }
+
+
+.cardImages{
+	height:300px;
+	margin:auto;
+	/*float:left;*/
+	margin-top:15%;
+	/*margin-left:15%;*/
+	margin-bottom:10%;
+  }
 
 .card1image {
 	grid-area: card1image;
-	background-color: var(--green);
+	background-color: #40596b;
 	padding: 10px;
 	border-radius: 3px;
+	align-self: center;
 }
 
 .card1text {
 	grid-area: card1text;
-	background-color: var(--darkblue);
-	padding: 10px;
+	background-color: white;
+	padding: 0px;
 	border-radius: 3px;
+	font-size:1.25em;
+	padding-top:15px;
+	padding-bottom:20px;
+	padding-left:5px;
+	padding-right:5px;
+	border-radius: 0px 0px 3px 3px;
 }
 
 /* End of How CARD1 grid */
@@ -313,21 +339,27 @@ body {
 	grid-template-areas:
 	"card2image"
 	"card2text";
-	grid-gap: 10px;
+	background-color: #40596b;
 }
 
 .card2image {
 	grid-area: card2image;
-	background-color: var(--green);
+	background-color: #40596b;
 	padding: 10px;
 	border-radius: 3px;
 }
 
 .card2text {
 	grid-area: card2text;
-	background-color: var(--darkblue);
-	padding: 10px;
+	background-color: white;
+	padding: 0px;
 	border-radius: 3px;
+	font-size:1.25em;
+	padding-top:15px;
+	padding-bottom:20px;
+	padding-left:5px;
+	padding-right:5px;
+	border-radius: 0px 0px 3px 3px;
 }
 
 /* End of How CARD2 grid */
@@ -340,21 +372,27 @@ body {
 	grid-template-areas:
 	"card3image"
 	"card3text";
-	grid-gap: 10px;
+	background-color: #40596b;
 }
 
 .card3image {
 	grid-area: card3image;
-	background-color: var(--green);
+	background-color: #40596b;
 	padding: 10px;
 	border-radius: 3px;
 }
 
 .card3text {
 	grid-area: card3text;
-	background-color: var(--darkblue);
-	padding: 10px;
+	background-color: white;
+	padding: 0px;
 	border-radius: 3px;
+	font-size:1.25em;
+	padding-top:15px;
+	padding-bottom:20px;
+	padding-left:5px;
+	padding-right:5px;
+	border-radius: 0px 0px 3px 3px;
 }
 
 /* End of How CARD3 grid */
