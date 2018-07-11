@@ -271,22 +271,29 @@ body {
 
 .how2 {
 	grid-area: how2;
-	min-width:325px;
 }
 
 .how3 {
 	grid-area: how3;
-	background-color: var(--purple);
 }
 
 .how4 {
 	grid-area: how4;
-	background-color: var(--purple);
 }
 
 /* End of How It Works Grid */
 
 /* Start of How CARD1 grid */
+
+.cardImages{
+	width: 300px;
+	margin: auto;
+	/*float:left;*/
+	margin-top:15%;
+	/*margin-left:15%;*/
+	margin-bottom:10%;
+  }
+
 
 .howcard1 {
 	display: grid;
@@ -297,16 +304,6 @@ body {
   /*   grid-gap: 10px; */
 	background-color: #40596b;
 }
-
-
-.cardImages{
-	height:300px;
-	margin:auto;
-	/*float:left;*/
-	margin-top:15%;
-	/*margin-left:15%;*/
-	margin-bottom:10%;
-  }
 
 .card1image {
 	grid-area: card1image;
@@ -347,6 +344,7 @@ body {
 	background-color: #40596b;
 	padding: 10px;
 	border-radius: 3px;
+	align-self: center;
 }
 
 .card2text {
