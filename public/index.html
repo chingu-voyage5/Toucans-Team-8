@@ -13,10 +13,10 @@
 	<!-- Start of Nav Bar -->
 	<nav class="navBar">
 		<ul>
-		  <li id="home"><a href="#Home">Home</a></li>
-		  <li id ="about"><a href="#About">About</a></li>
-		  <li id ="features"><a href="#Features">Features</a></li>
-		  <li id ="addto"><a href="#Add to Slack">Add to Slack</a></li>
+		  <li id="hoverhome"><a href="#home">Home</a></li>
+		  <li id ="hoverabout"><a href="#about">About</a></li>
+		  <li id ="hoverfeatures"><a href="#features">Features</a></li>
+		  <li id ="hoveraddto"><a href="#addtoslack">Add to Slack</a></li>
 	  </ul>
 	</div>
   </nav>
@@ -30,14 +30,14 @@
 
 <!–– Start of Header -->
 
-        <div class="item item1 header flexEnd">
+        <div id ="home" class="item item1 header flexEnd">
           <div>
           <div>
 			<div class="header1 headers logo"><h1><strong>Ticky</strong>Bot</h1></div>
 			<div class="header2 headers headline">Let your team manage their support tickets 100% inside Slack</div>
           
 <!--     Button Start       -->
-			<div class="header3 headers"><img class="header3img"  src="https://tickybott.herokuapp.com/5e594ad76535670e7f227f79c6b72799.svg">Add To <strong>Slack</strong></div>
+			<a class=btnA href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread"><div class="header3 headers"><img class="header3img"  src="https://tickybott.herokuapp.com/5e594ad76535670e7f227f79c6b72799.svg"><span>Add To <strong>Slack</strong></span></div></a>
             </div>
 <!--     Button End       -->
           </div>
@@ -51,7 +51,7 @@
 
 <!–– Start of What Is TickyBot -->
 
-		<div class="item item2 what">
+		<div id="about" class="item item2 what">
 			<div class="what1 whats whattitle">What Is <strong>Ticky</strong>Bot<hr class="breakit"></div>
 			<div class="what2 whats para1"><strong>Ticky</strong>Bot is a Slack Bot 🤖 that lets you use support tickets on Slack. This way, you don't need to leave your beloved channel to assist your users, if you don't feel like it.</div>
 			<div class="what3 whats para2">With <strong>Ticky</strong>Bot you can easily check if you've received new tickets, change their status, or write a reply, and the ticket will instantly update itself on our site.</div>
@@ -64,7 +64,7 @@
 
 <!–– Start of How It Works -->
 
-        <div class="item item3 how">
+        <div id="features" class="item item3 how">
 			<div class="how1 hows howtitle">How It Works<hr class="breakit"></div>
 
 <!–– Start of How It Works "Cards" -->	
@@ -89,12 +89,12 @@
 
 <!–– Start of Start Using TickyBot Today -->
 
-        <div class="item item4 start">
+        <div id="addtoslack" class="item item4 start">
 			<div class="start1 starts starttitle">Start Using <strong>Ticky</strong>Bot Today</div>
 			<div class="start2 starts startblurb"><strong>Ticky</strong>Bot allows Slack teams to manage their support tickets 100% inside Slack, without having to switch between different apps.</div>
 			<div class="start3 starts startbutton">
-				<a class="btn" href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&amp;scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread">
-					
+				<a id="btnatwo" class="btn" href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&amp;scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread">
+				 <img id="btnTwoImg"  src="https://tickybott.herokuapp.com/5e594ad76535670e7f227f79c6b72799.svg">	
 					<span>Add to
 					  <strong>Slack</strong>
 					</span>
