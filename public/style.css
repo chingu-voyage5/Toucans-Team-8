@@ -9,7 +9,7 @@
   --darkblue: #293241;
   --gray: #333333;
   --black: #191919;
-  --white: #FFFFFF;
+  --white: rgba(255,255,255,0.95); 
   --footer: #41596A;
 }
 
@@ -48,16 +48,16 @@ body {
 	text-decoration: none;
   }
   
-  #home:hover a {
+  #hoverhome:hover a {
 	color: white;
   }
-  #about:hover a {
+  #hoverabout:hover a {
 	color: white;
   }
-  #features:hover a {
+  #hoverfeatures:hover a {
 	color: white;
   }
-  #addto:hover a {
+  #hoveraddto:hover a {
 	color: white;
   }
   /* Nav Bar End*/
@@ -186,7 +186,11 @@ body {
   width:100%;
   color: rgba(0,0,0,0.75); 
   cursor: pointer;
-  
+  font-family: signika;
+ }
+
+.btnA  {
+  text-decoration:none;
 }
 
 .header3 img {
@@ -487,9 +491,30 @@ body {
 	cursor: pointer;
 	padding: 1em 3em;
 	font-size: 1rem;
-	font-family: inherit;
-  }
+	font-family: Signika;
+  align-items: center;
+  display: flex;
+  font-size: 1.75rem;
+  max-width: 300px;
+  padding: 1rem;
+  max-width:300px;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width:100%;
+  color: var(--white); 
+  cursor: pointer;
+ }
 
+#btnatwo{
+  text-decoration:none;
+}
+
+#btnTwoImg {
+    margin-right: 1rem;
+    padding: 0;
+    width: 2.5rem;
+}
 
 .start4 {
 	grid-area: start4;
@@ -521,6 +546,11 @@ body {
 	text-align: center;
 	color: var(--white);
 	font-size: .75em;
+}
+
+.footers a{
+  text-decoration:underline;
+  color: var(--white);
 }
 
 .footer1 {
