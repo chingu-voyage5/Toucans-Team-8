@@ -9,7 +9,9 @@
   --darkblue: #293241;
   --gray: #333333;
   --black: #191919;
+
   --white: rgba(255,255,255,0.95); 
+
   --footer: #41596A;
 }
 
@@ -48,6 +50,7 @@ body {
 	text-decoration: none;
   }
   
+
   #hoverhome:hover a {
 	color: white;
   }
@@ -58,6 +61,7 @@ body {
 	color: white;
   }
   #hoveraddto:hover a {
+
 	color: white;
   }
   /* Nav Bar End*/
@@ -121,6 +125,7 @@ body {
 	"header3 header4";
 	padding: 10px;
 	background-color: #55c0ec;
+
 	height: 750px;
 /*   justify-content: center; */
   align-content: center;
@@ -130,6 +135,7 @@ body {
   padding-left:10rem;
 /*   position:relative; */
   justify-content:flex-end;
+
 }
 .headers {
   padding: 10px;
@@ -154,6 +160,7 @@ body {
   text-align:center;
   font-family: Signika;
  }
+
 
 
 .header2 {
@@ -515,6 +522,20 @@ body {
     padding: 0;
     width: 2.5rem;
 }
+
+
+
+.btn {
+	background-color: var(--footer);
+	border: 0;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	padding: 1em 3em;
+	font-size: 1rem;
+	font-family: inherit;
+  }
+
 
 .start4 {
 	grid-area: start4;
