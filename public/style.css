@@ -530,8 +530,11 @@
  	padding: 1rem;
   	width:100%;
   	/*color: var(--white);*/ 
-  	
- }
+}
+
+#btnBG{
+ background-color:pink;
+}
 
 #btnatwo{
   text-decoration:none;
