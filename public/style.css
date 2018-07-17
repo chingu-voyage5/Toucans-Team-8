@@ -511,7 +511,7 @@
 
 
 .btn {
-	background-color: var(--footer);
+	background-color: #41596A;
 	border: 0;
 	border-radius: 3px;
 	color: #fff;
@@ -519,18 +519,18 @@
 	padding: 1em 3em;
 	font-size: 1rem;
 	font-family: Signika;
-  align-items: center;
-  display: flex;
-  font-size: 1.75rem;
-  max-width: 300px;
-  padding: 1rem;
-  max-width:300px;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  width:100%;
-  /*color: var(--white);*/ 
-  cursor: pointer;
+  	align-items: center;
+ 	display: flex;
+  	font-size: 1.75rem;
+  	max-width: 300px;
+  	padding: 1rem;
+  	max-width:300px;
+ 	align-items: center;
+ 	justify-content: center;
+ 	padding: 1rem;
+  	width:100%;
+  	/*color: var(--white);*/ 
+  	
  }
 
 #btnatwo{
@@ -542,18 +542,6 @@
     padding: 0;
     width: 2.5rem;
 }
-
-  /* .btn {
-	  background-color: var(--footer);
-	  border: 0;
-	  border-radius: 3px;
-	  color: #fff;
-	  cursor: pointer;
-	  padding: 1em 3em;
-	  font-size: 1rem;
-	  font-family: inherit;
-	}
-  */
   
   .start4 {
 	  grid-area: start4;
