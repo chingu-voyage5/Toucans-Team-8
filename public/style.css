@@ -529,7 +529,7 @@
   justify-content: center;
   padding: 1rem;
   width:100%;
-  color: var(--white); 
+  /*color: var(--white);*/ 
   cursor: pointer;
  }
 
