@@ -239,6 +239,20 @@
 	  border: 2px solid #55c0ec;
 	  border-color:#55c0ec;
 	}
+#blueBreak1 {
+    margin-top: 0;
+	  align:center;
+	  width:200px;
+	  border: 2px solid #55c0ec;
+	  border-color:#55c0ec;
+}
+#blueBreak2 {
+    margin-top: 0;
+	  align:center;
+	  width:200px;
+	  border: 2px solid #55c0ec;
+	  border-color:#55c0ec;
+}
 	/* End Blue Line */
 	
 	.what {
