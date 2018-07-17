@@ -504,7 +504,7 @@
   
  .start3 {
 	grid-area: start3;
-	background-color: var(--white);
+	/*background-color: var(--white);*/
 	justify-self: center;
 }
 
