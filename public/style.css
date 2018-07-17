@@ -502,43 +502,47 @@
 	  padding: 0 1rem 1rem;
   }
   
-  .start3 {
-	  grid-area: start3;
-	  background-color: var(--white);
-	  justify-self: center;
-  }
-  
-  
-  
- .btn {
-		grid-area: start3;
-		align-items: center;
-		border-radius: 4px;
-		display: flex;
-		font-size: 1.75rem;
-		max-width: 300px;
-		padding: 1rem;
-		background-color: white;
-		max-width:300px;
-		align-items: center;
-		justify-content: center;
-		padding: 1rem;
-		margin:auto;
-		width:100%;
-		color: rgba(0,0,0,0.75); 
-		cursor: pointer;
-		font-family: signika;
-   }
-  
-  #btnatwo{
-	text-decoration:none;
-  }
-  
-  #btnTwoImg {
-	  margin-right: 1rem;
-	  padding: 0;
-	  width: 2.5rem;
-  }
+ .start3 {
+	grid-area: start3;
+	background-color: var(--white);
+	justify-self: center;
+}
+
+
+
+.btn {
+	background-color: var(--footer);
+	border: 0;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	padding: 1em 3em;
+	font-size: 1rem;
+	font-family: Signika;
+  align-items: center;
+  display: flex;
+  font-size: 1.75rem;
+  max-width: 300px;
+  padding: 1rem;
+  max-width:300px;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width:100%;
+  color: var(--white); 
+  cursor: pointer;
+ }
+
+#btnatwo{
+  text-decoration:none;
+}
+
+#btnTwoImg {
+    margin-right: 1rem;
+    padding: 0;
+    width: 2.5rem;
+}
+
   /* .btn {
 	  background-color: var(--footer);
 	  border: 0;
