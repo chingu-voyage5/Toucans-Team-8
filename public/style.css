@@ -1,5 +1,670 @@
 
 :root {
+
+	--purple: #3D5A80;
+	--blue: #98C1D9;
+	--cyan: #E0FBFC;
+	--red: #EE6C4D;
+	--green: #20b2aa;
+	--medblue: #468499;
+	--darkblue: #293241;
+	--gray: #333333;
+	--black: #191919;
+  
+	--white: rgba(255,255,255,0.95); 
+  
+	--footer: #41596A;
+  }
+  
+  
+  body {
+	  font-family: 'Rubik', sans-serif;
+	  margin: 0px;
+	  color: var(--black);
+  }
+  
+  /* Nav Bar Start*/
+  .navBar {
+	  background: #40596b;
+	  text-align: center;
+	  height: 54px;
+	  font-size: 1.25em;
+	  padding-top: 8px;
+	  font-family: "Signika", sans-serif;
+	  font-weight: 300;
+	}
+	
+	.navBar ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  display: inline-block;
+	}
+	
+	.navBar li {
+	  float: left;
+	  padding: 10px 12px;
+	}
+	.navBar a {
+	  display: block;
+	  color: #ffd05a;
+	  text-decoration: none;
+	}
+	
+  
+	#hoverhome:hover a {
+	  color: white;
+	}
+	#hoverabout:hover a {
+	  color: white;
+	}
+	#hoverfeatures:hover a {
+	  color: white;
+	}
+	#hoveraddto:hover a {
+  
+	  color: white;
+	}
+	/* Nav Bar End*/
+  
+  
+  /* Start of CSS Grid */
+  
+  .container {
+	  display: grid;
+	  grid-template-columns: repeat(6, 1fr);
+	  grid-template-areas:
+	  "item1 item1 item1 item1 item1 item1"
+	  "item2 item2 item2 item2 item2 item2"
+	  "item3 item3 item3 item3 item3 item3"
+	  "item4 item4 item4 item4 item4 item4"
+	  "item5 item5 item5 item5 item5 item5";
+	  grid-gap: 20px;
+  }
+  
+  .item {
+	  color: var(--white);
+	  padding: 1em;
+	  border-radius: 3px;
+  }
+  
+  .item1 {
+	  grid-area: item1;
+	  background-color: var(--purple);
+  }
+  
+  .item2 {
+	  grid-area: item2;
+	  background-color: var(--medblue);
+  }
+  
+  .item3 {
+	  grid-area: item3;
+	  background-color: var(--blue);
+  }
+  
+  .item4 {
+	  grid-area: item4;
+	  background-color: var(--white);
+  }
+  
+  .item5 {
+	  grid-area: item5;
+	  background-color: var(--cyan);
+	  color: var(--black);
+  }
+  
+  /* Header CSS Grid */
+  
+  .header {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  grid-gap: 0px;
+	  grid-template-areas:
+	  "header1 header4"
+	  "header2 header4"
+	  "header3 header4";
+	  padding: 10px;
+	  background-color: #55c0ec;
+  
+	  height: 750px;
+  /*   justify-content: center; */
+	align-content: center;
+  }
+  .flexEnd{
+	/* display:grid; */
+	padding-left:10rem;
+  /*   position:relative; */
+	justify-content:flex-end;
+  
+  }
+  .headers {
+	padding: 10px;
+	  border-radius: 3px;
+	  text-align: center;
+	align-content: center;
+	padding: 1rem;
+	max-width:1200px;
+  }
+  
+  .header1 h1 {
+	  grid-area: header1;
+		display:inline-flex;
+	  font-size: 5rem;
+	  color: rgba(0, 0, 0, 0.6);
+	  margin-top: 0%;
+	  margin-bottom: 0%;
+	  letter-spacing: -3px;
+	  font-weight: 300;
+	  padding-top: 5rem;
+	  padding-bottom: 0%;
+		text-align:center;
+		font-family: Signika;
+   }
+  
+  
+  
+  .header2 {
+	  grid-area: header2;
+	  color: var(--white);
+	  letter-spacing: -1px;
+	  max-width: 500px;
+	  margin:auto;
+	  font-family: Signika;
+	  font-size: 1.70rem;
+	  text-align: center;
+	  padding-top: 0%;
+	display:block;
+  }
+  
+  .header3 {
+	grid-area: header3;
+	align-items: center;
+	border-radius: 4px;
+	display: flex;
+	font-size: 1.75rem;
+	max-width: 300px;
+	padding: 1rem;
+	background-color: white;
+	max-width:300px;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	margin:auto;
+	width:100%;
+	color: rgba(0,0,0,0.75); 
+	cursor: pointer;
+	font-family: signika;
+   }
+  
+  .btnA  {
+	text-decoration:none;
+  }
+  
+  .header3 img {
+	  margin-right: 1rem;
+	  padding: 0;
+	  width: 2.5rem;
+  }
+  
+  .header4 {
+	grid-area: header4;
+	display:grid;
+	justify-content:flex-start;
+	}
+
+	.header4 img {
+		max-width: 100%;
+		display: block;
+		height: auto;
+	}
+  
+ /* .header4 .circle {
+	margin: auto;
+	background: #FFD05B;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%; */
+  /*   position: relative; */
+  }
+  
+  /* End Header CSS Grid */
+  
+  /* What is TickyBot Grid */
+  
+  /* Blue Line Under titles  */
+  .breakit {
+	  margin-top: 0;
+	  align:center;
+	  width:200px;
+	  border: 2px solid #55c0ec;
+	  border-color:#55c0ec;
+	}
+#blueBreak1 {
+    margin-top: 0;
+	  align:center;
+	  width:200px;
+	  border: 2px solid #55c0ec;
+	  border-color:#55c0ec;
+}
+#blueBreak2 {
+    margin-top: 0;
+	  align:center;
+	  width:200px;
+	  border: 2px solid #55c0ec;
+	  border-color:#55c0ec;
+}
+	/* End Blue Line */
+	
+	.what {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  grid-gap: 20px;
+	  grid-template-areas:
+		"what1 what1"
+		"what2 what3"
+		"what4 what4";
+	  font-family: Signika;
+	  color:rgba(0, 0, 0, 0.75);
+	  line-height:1.5;
+	  background-color: var(--white);
+	}
+	
+	.whats {
+	  padding: 10px;
+	  border-radius: 3px;
+	}
+	
+	.what1 {
+	  grid-area: what1;
+	  background-color: var(--white);
+	  text-align:center;
+	  font-size:3em;
+	}
+	
+	.what2 {
+	  grid-area: what2;
+	  background-color: var(--white);
+	  text-align:left;
+	  font-size:1.5em;
+	  margin-left:10%;
+	  margin-right:0%;
+	}
+	
+	.what3 {
+	  grid-area: what3;
+	  background-color: var(--white);
+	  text-align:left;
+	  font-size:1.5em;
+	  margin-left:0%;
+	  margin-right:15%;
+	}
+	
+	.what4 {
+	  grid-area: what4;
+	  background-color: var(--white);
+	  text-align:left;
+	  font-size:1.5em;
+	  margin-left:5%;
+	  margin-right:7.25%;
+	}
+	
+	.what4 p{
+	  margin:0px;
+	}
+  
+  /* End of What is TickyBot Grid */
+  
+  /* Start of How It Works Grid */
+  
+  .how {
+	  display: grid;
+	  grid-template-columns: repeat(6, 1fr);
+	  grid-gap: 50px;
+	  padding-left: 30px;
+	  padding-right: 30px;
+	  padding-bottom: 100px;
+	  grid-template-areas:
+	  "how1 how1 how1 how1 how1 how1"
+	  "how2 how2 how3 how3 how4 how4";
+	  background:#90ddaa;
+  }
+  
+  .hows {
+	  /*padding: 10px;*/
+	  border-radius: 3px;
+	  font-family: Signika;
+	  color: rgba(0,0,0,0.7);
+	  text-align:center;
+  }
+  
+  .how1 {
+	  grid-area: how1;
+		padding-top:20px;
+		font-size:2.75em;
+  }
+  
+  .how2 {
+	  grid-area: how2;
+  }
+  
+  .how3 {
+	  grid-area: how3;
+  }
+  
+  .how4 {
+	  grid-area: how4;
+  }
+  
+  /* End of How It Works Grid */
+  
+  /* Start of How CARD1 grid */
+  
+  .cardImages{
+	  width: 300px;
+	  margin: auto;
+	  /*float:left;*/
+	  margin-top:15%;
+	  /*margin-left:15%;*/
+	  margin-bottom:10%;
+	}
+  
+  
+  .howcard1 {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-template-areas:
+		"card1image"
+		"card1text";
+	/*   grid-gap: 10px; */
+	  background-color: #40596b;
+  }
+  
+  .card1image {
+	  grid-area: card1image;
+	  background-color: #40596b;
+	  padding: 10px;
+	  border-radius: 3px;
+	  align-self: center;
+  }
+  
+  .card1text {
+	  grid-area: card1text;
+	  background-color: white;
+	  padding: 0px;
+	  border-radius: 3px;
+	  font-size:1.25em;
+	  padding-top:15px;
+	  padding-bottom:20px;
+	  padding-left:5px;
+	  padding-right:5px;
+	  border-radius: 0px 0px 3px 3px;
+  }
+  
+  /* End of How CARD1 grid */
+  
+  /* Start of How CARD2 grid */
+  
+  .howcard2 {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-template-areas:
+	  "card2image"
+	  "card2text";
+	  background-color: #40596b;
+  }
+  
+  .card2image {
+	  grid-area: card2image;
+	  background-color: #40596b;
+	  padding: 10px;
+	  border-radius: 3px;
+	  align-self: center;
+  }
+  
+  .card2text {
+	  grid-area: card2text;
+	  background-color: white;
+	  padding: 0px;
+	  border-radius: 3px;
+	  font-size:1.25em;
+	  padding-top:15px;
+	  padding-bottom:20px;
+	  padding-left:5px;
+	  padding-right:5px;
+	  border-radius: 0px 0px 3px 3px;
+  }
+  
+  /* End of How CARD2 grid */
+  
+  /* Start of How CARD3 grid */
+  
+  .howcard3 {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-template-areas:
+	  "card3image"
+	  "card3text";
+	  background-color: #40596b;
+  }
+  
+  .card3image {
+	  grid-area: card3image;
+	  background-color: #40596b;
+	  padding: 10px;
+	  border-radius: 3px;
+  }
+  
+  .card3text {
+	  grid-area: card3text;
+	  background-color: white;
+	  padding: 0px;
+	  border-radius: 3px;
+	  font-size:1.25em;
+	  padding-top:15px;
+	  padding-bottom:20px;
+	  padding-left:5px;
+	  padding-right:5px;
+	  border-radius: 0px 0px 3px 3px;
+  }
+  
+  /* End of How CARD3 grid */
+  
+  /* Start of Start Using TickyBot Today Grid */
+  
+  .start {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-gap: 20px;
+	  grid-template-areas:
+	  "start1"
+	  "start2"
+	  "start3"
+	  "start4";
+  }
+  
+  .starts {
+	  padding: 10px;
+	  border-radius: 3px;
+	  color: var(--black);
+  }
+  
+  .start1 {
+	  grid-area: start1;
+	  font-size: 2em;
+	  text-align: center;
+  }
+  
+  .start2 {
+	  grid-area: start2;
+	  background-color: var(--white);
+	  font-size: 1em;
+	  text-align: center;
+	  padding: 0 1rem 1rem;
+  }
+  
+ .start3 {
+	grid-area: start3;
+/* 	background-color: var(--white); */
+	justify-self: center;
+}
+
+
+
+.btn {
+	background-color: var(--footer);
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 1em 3em;
+	font-size: 1rem;
+	font-family: Signika;
+  align-items: center;
+  display: flex;
+  font-size: 1.75rem;
+  max-width: 300px;
+  padding: 1rem;
+  max-width:300px;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width:100%;
+  color: var(--white); 
+  cursor: pointer;
+ }
+
+#btnatwo{
+  text-decoration:none;
+}
+
+#btnTwoImg {
+    margin-right: 1rem;
+    padding: 0;
+    width: 2.5rem;
+}
+
+  /* .btn {
+	  background-color: var(--footer);
+	  border: 0;
+	  border-radius: 3px;
+	  color: #fff;
+	  cursor: pointer;
+	  padding: 1em 3em;
+	  font-size: 1rem;
+	  font-family: inherit;
+	}
+  */
+  
+  .start4 {
+	  grid-area: start4;
+	  background-color: var(--white);
+	  font-size: 1em;
+	  text-align: center;
+	  margin: 0% 25%;
+  }
+  
+  /* End of Start Using TickyBot Today Grid */
+  
+  
+  /* Start of Footer Grid */
+  
+  .footer {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-gap: 5px;
+	  background-color: var(--footer);
+	  grid-template-areas:
+	  "footer1"
+	  "footer2"
+	  "footer3";
+  }
+  
+  .footers {
+	  padding: 0px;
+	  border-radius: 3px;
+	  text-align: center;
+	  color: var(--white);
+	  font-size: .75em;
+  }
+  
+  .footers a{
+	text-decoration:underline;
+	color: var(--white);
+  }
+  
+  .footer1 {
+	  grid-area: footer1;
+  }
+  
+  .footer2 {
+	  grid-area: footer2;
+  }
+  
+  .footer3 {
+	  grid-area: footer3;
+  }
+  
+  /* End of Footer Grid */
+  
+  
+  /* MEDIA QUERIES HERE */
+  
+  @media (max-width: 1050px) {
+	.how {
+	  grid-template-areas: 
+	  "how1 how1 how1 how1 how1 how1"
+	  "how2 how2 how2 how3 how3 how3"
+	  "how4 how4 how4 how4 how4 how4";
+		}
+	  }
+  
+  @media (max-width: 725px) {
+	  .how {
+		  grid-template-areas: 
+		  "how1 how1 how1 how1 how1 how1"
+		  "how2 how2 how2 how2 how2 how2"
+		  "how3 how3 how3 how3 how3 how3"
+		  "how4 how4 how4 how4 how4 how4";
+		  }
+	  }
+	  
+  @media (max-width: 725px) {
+	  .how {
+		  grid-template-areas: 
+		  "how1 how1 how1 how1 how1 how1"
+		  "how2 how2 how2 how2 how2 how2"
+		  "how3 how3 how3 how3 how3 how3"
+		  "how4 how4 how4 how4 how4 how4";
+		  }
+	  }	
+  
+  @media (max-width: 725px) {
+	  .what {
+		  grid-template-areas: 
+		  "what1 what1"
+		  "what2 what2"
+		  "what3 what3"
+		  "what4 what4";
+		  }
+	  }
+  
+  @media (max-width: 725px) {
+	  .header { 
+		  grid-template-areas: 
+		  "header1 header1"
+		  "header2 header2"
+		  "header3 header3"
+		  "header4 header4";
+		  }
+	  }	
+  
+  /* End of MEDIA QUERIES */
+  
+  /* End of CSS Grid */
+  
+  
+  
+=======
   --purple: #3D5A80;
   --blue: #98C1D9;
   --cyan: #E0FBFC;
@@ -643,5 +1308,6 @@ body {
 /* End of MEDIA QUERIES */
 
 /* End of CSS Grid */
+
 
 
